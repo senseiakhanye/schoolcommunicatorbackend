@@ -42,3 +42,21 @@ Not neat solution, run `chown 1000:1000 path/to/volume` to set permissions.
 ## Connecting to mongodb
 
 For mongodb connection url, instead of using `localhost`, the correct name is now the name of the image, for the mondb image, this will be `mongodb`
+
+## Multiple containers 
+
+Running multple containers for testing how it will scale with multiple containers
+
+https://stackoverflow.com/questions/39663096/docker-compose-creating-multiple-instances-for-the-same-image
+
+## Multiple containers on different ports
+
+Running multiple ports with different port values.
+
+https://stackoverflow.com/questions/53022813/docker-compose-running-multiple-instances-of-one-image-in-different-ports
+
+## Changing environmental variables inside the container
+
+With this option, one can change the value on one container.
+
+https://stackoverflow.com/questions/27812548/how-to-set-an-environment-variable-in-a-running-docker-container

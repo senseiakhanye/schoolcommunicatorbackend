@@ -9,14 +9,14 @@ services:
     env_file:
       - ./env/mongo.env
   npm:
-    user: 1000:1000
+    user: "${UID}:${GID}"
     build: ./
     stdin_open: true
     tty: true
     volumes:
       - ./:/app
     ports:
-      - '4500:4500'
+      - "${PORTS}:${PORT}"
     env_file:
       - ./env/backend.env
     depends_on:
